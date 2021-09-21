@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniclass</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Miniclass Data</h1>
+
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="card">
+              <div class="card-body">
+
+                <!-- Makes POST request to /login route -->
+                <form action="/layanan/miniclass-upload-status" method="POST" enctype="multipart/form-data">
+                  <div class="form-group">
+                    <label for="nama_miniclass">Nama Kelas</label>
+                    <input type="text" class="form-control" name="nama_miniclass">
+                  </div>
+                  <div class="form-group">
+                    <label for="tipe_miniclass">Tipe Kelas</label>
+                    <input type="text" class="form-control" name="tipe_miniclass">
+                  </div>
+                  <div class="form-group">
+                    <label for="deskripsi_miniclass">Deskripsi</label>
+                    <input type="text" class="form-control" name="deskripsi_miniclass">
+                  </div>
+                  <div class="form-group">
+                    <label for="materi_miniclass">Materi</label>
+                    <input type="text" class="form-control" name="materi_miniclass">
+                  </div>
+                  <div class="form-group">
+                    <label for="link_meeting">Link Meeting</label>
+                    <input type="text" class="form-control" name="link_meeting">
+                  </div>
+                  <div class="form-group">
+                    <label for="persiapan_miniclass">Persiapan</label>
+                    <input type="text" class="form-control" name="persiapan_miniclass">
+                  </div>
+                  <div class="form-group">
+                    <label for="biaya_miniclass">Biaya</label>
+                    <input type="text" class="form-control" name="biaya_miniclass">
+                  </div>
+                  <div class="form-group">
+                    <div>
+                        <label for="photo">Poster Program</label>
+                        <input type="file" class="form-control" name="photo" required/>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-dark">Submit All Data</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
