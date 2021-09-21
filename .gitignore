@@ -24,3 +24,8 @@ package-lock.json
 coverage
 
 # Benchmarking
+
+# dotenv environment variables file
+.env
+.env.test
+.env.production
